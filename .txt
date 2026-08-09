@@ -1,0 +1,12 @@
+cadastro
+nome
+data de nacimento
+gmail
+senha
+
+
+login------
+login
+senha
+esqueceu a senha
+cadastra
