@@ -7,14 +7,15 @@ import lombok.Data;
 import java.util.UUID;
 
 @Data
-@Entity(name = "cad_user")
+@Entity
+@Table(name = "cad_user")
 public class UserModel {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID uuid;
-    @Column(unique = true)
     private String nome;
     private String data_nascimento;
+    @Column(unique = true)
     private String email;
     private String senha;
 
