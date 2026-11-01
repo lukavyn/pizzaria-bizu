@@ -1,12 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro de Usuário</title>
     <link rel="stylesheet" href="../../../frontend/css/cadastro/cadastro.css">
 </head>
+
 <body>
-    
+
+    <main class="container">
+
+        <div class="cadastro">
+
+            <h1>Cadastro de Usuário</h1>
+            <p class="subtitulo">Preencha os dados para cadastrar um novo usuário.</p>
+
+            <form>
+
+                <div class="campo">
+                    <label for="nome">Nome</label>
+                    <input 
+                        type="text" 
+                        id="nome" 
+                        name="nome"
+                        placeholder="Digite seu nome"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone</label>
+                    <input 
+                        type="tel" 
+                        id="telefone" 
+                        name="telefone"
+                        placeholder="(00) 00000-0000"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="data">Data de nascimento</label>
+                    <input 
+                        type="date" 
+                        id="data" 
+                        name="data"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email"
+                        placeholder="seuemail@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input 
+                        type="password" 
+                        id="senha" 
+                        name="senha"
+                        placeholder="Digite sua senha"
+                        required
+                    >
+                </div>
+
+                <button type="submit">
+                    Cadastrar novo usuário
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
 </body>
 </html>

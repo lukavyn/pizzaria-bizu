@@ -1,0 +1,236 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f7;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+    max-width: 500px;
+}
+
+
+/* =========================
+   CARD DE CADASTRO
+========================= */
+
+.cadastro {
+    background-color: #ffffff;
+
+    width: 100%;
+
+    padding: 40px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+h1 {
+    text-align: center;
+
+    color: #222222;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   SUBTÍTULO
+========================= */
+
+.subtitulo {
+    text-align: center;
+
+    color: #777777;
+
+    font-size: 14px;
+
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 18px;
+}
+
+
+/* =========================
+   CAMPO
+========================= */
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+    color: #333333;
+
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+input {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 14px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   INPUT AO CLICAR
+========================= */
+
+input:focus {
+    border-color: #2563eb;
+
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   PLACEHOLDER
+========================= */
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+    width: 100%;
+
+    height: 48px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* =========================
+   BOTÃO HOVER
+========================= */
+
+button:hover {
+    background-color: #1d4ed8;
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================
+   BOTÃO AO CLICAR
+========================= */
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 15px;
+    }
+
+    .cadastro {
+        padding: 25px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+}
